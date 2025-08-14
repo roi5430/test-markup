@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Фотографы в Майами</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1>Фотографы в Майами</h1>
+        <nav class="breadcrumb" aria-label="Хлебные крошки">
+          <ol>
+            <li><a href="index.html">Главная</a></li>
+            <li aria-current="page">Фотографы</li>
+          </ol>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <aside class="regions-list">
+        <h2>Регионы</h2>
+        <ul>
+          <li><a href="region.html">Майами-Бич</a></li>
+          <li><a href="region.html">Халландейл</a></li>
+        </ul>
+      </aside>
+
+      <section class="card-grid" aria-labelledby="category-profiles">
+        <h2 id="category-profiles" class="visually-hidden">
+          Профили — Фотографы
+        </h2>
+
+        <!-- Примеры карточек -->
+        <article class="card">
+          <a href="post.html" class="card__link">
+            <img
+              src="./image/avatar-1.jpg"
+              alt="Анна — фотограф"
+              loading="lazy"
+              width="400"
+              height="400"
+            />
+            <div class="card__body">
+              <h3 class="card__name">Анна</h3>
+              <p class="card__meta">Майами-Бич</p>
+              <time datetime="2025-08-08T11:43">08.08.2025, 11:43</time>
+            </div>
+          </a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p>© ModelConnect Miami</p>
+    </footer>
+  </body>
+</html>

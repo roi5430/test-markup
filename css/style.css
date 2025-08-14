@@ -1,0 +1,111 @@
+:root {
+  --main-color: #1b3764;
+  --title-color: #b4c7e7;
+  --accent-color: #ffca42;
+  --white-color: #ffffff;
+  --section-color: #f5f8fc;
+  --text-color: #969aa0;
+  --svg-color: #141414;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #161616;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--white-color);
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1440px;
+  padding: 0px 70px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 120px 0;
+}
+
+.button {
+  cursor: pointer;
+  padding: 18px 51px 19px;
+  color: var(--main-color);
+  font-family: "Cardo", serif;
+  font-size: 19px;
+  line-height: 28px;
+  letter-spacing: 0.57px;
+  transition: transform 0.3s ease;
+}
+
+.button:hover,
+.button:focus {
+  transform: scale(1.08);
+}
+
+p,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
+  transition: transform 0.3s ease;
+  font-family: "DM Mono", serif;
+  font-weight: 200;
+  font-size: 24px;
+  transition: color 0.3s, border-bottom 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+a:hover,
+a:focus {
+  transform: scale(1.08);
+  border-bottom: 2px solid var(--white-color);
+}
+
+/* Главная */
+/* .site-header {
+} */
+
+.main-title {
+  color: var(--white-color);
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-grid {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}

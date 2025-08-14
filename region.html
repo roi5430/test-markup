@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Профили – Халландейл-Бич</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1>Профили – Халландейл-Бич</h1>
+        <nav class="breadcrumb" aria-label="Хлебные крошки">
+          <ol>
+            <li><a href="index.html">Главная</a></li>
+            <li aria-current="page">Халландейл-Бич</li>
+          </ol>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <aside class="filters">
+        <h2>Рубрики</h2>
+        <ul>
+          <li><a href="category.html">Фотографы</a></li>
+          <li><a href="category.html">Модели</a></li>
+          <li><a href="category.html">Стилисты</a></li>
+        </ul>
+      </aside>
+
+      <section class="card-grid" aria-labelledby="region-profiles">
+        <h2 id="region-profiles" class="visually-hidden">
+          Профили в Халландейл-Бич
+        </h2>
+
+        <!-- Карточки как в index, но отфильтрованные по региону -->
+        <article class="card">
+          <a href="post.html" class="card__link">
+            <img
+              src="./image/avatar-1.jpg"
+              alt="Анна — фотограф"
+              loading="lazy"
+              width="400"
+              height="400"
+            />
+            <div class="card__body">
+              <h3 class="card__name">Анна</h3>
+              <p class="card__meta">Фотограф</p>
+              <time datetime="2025-08-08T11:43">08.08.2025, 11:43</time>
+            </div>
+          </a>
+        </article>
+
+        <!-- ... -->
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p>© ModelConnect Miami</p>
+    </footer>
+  </body>
+</html>

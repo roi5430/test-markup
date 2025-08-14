@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Анна — фотограф</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1>Анна — фотограф</h1>
+        <nav class="breadcrumb" aria-label="Хлебные крошки">
+          <ol>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="category.html">Фотографы</a></li>
+            <li aria-current="page">Анна</li>
+          </ol>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container profile-page">
+      <section class="gallery" aria-labelledby="gallery-title">
+        <h2 id="gallery-title" class="visually-hidden">Галерея</h2>
+        <ul class="gallery-grid">
+          <li>
+            <img
+              src="./img/gallery-1.jpg"
+              alt="Пример работы 1"
+              loading="lazy"
+            />
+          </li>
+          <li>
+            <img
+              src="./img/gallery-1.jpg"
+              alt="Пример работы 2"
+              loading="lazy"
+            />
+          </li>
+          <li>
+            <img
+              src="./img/gallery-1.jpg"
+              alt="Пример работы 3"
+              loading="lazy"
+            />
+          </li>
+        </ul>
+      </section>
+
+      <section class="profile-info">
+        <h2>Анна, 28</h2>
+        <p class="meta">Майами-Бич — Фотограф</p>
+
+        <article class="description">
+          <h3>О себе</h3>
+          <p>
+            Краткое описание: съемка портретов и коммерческих проектов. Работала
+            с локальными брендами, есть опыт съемок на улице и в студии.
+          </p>
+        </article>
+
+        <article class="contacts">
+          <h3>Контакты</h3>
+          <p>Email: <a href="mailto:anna@example.com">anna@example.com</a></p>
+          <p>Телефон: <a href="tel:+1234567890">+1 234 567 890</a></p>
+          <p><a class="btn" href="mailto:anna@example.com">Связаться</a></p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p>© ModelConnect Miami</p>
+    </footer>
+  </body>
+</html>
