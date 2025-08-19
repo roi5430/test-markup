@@ -27,8 +27,8 @@ img {
 
 .container {
   width: 1440px;
-  padding: 0px 70px;
-  margin-bottom: 40px;
+  padding: 0px 70px 40px;
+  margin: 0 auto;
 }
 
 .section {
@@ -182,6 +182,15 @@ details[open] summary {
   gap: 20px;
 }
 
+.card {
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover,
+.card:focus {
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.8);
+}
+
 .card__body {
   border: 1px solid #888;
   padding: 10px;
@@ -202,4 +211,25 @@ details[open] summary {
   font-size: 16px;
 }
 
-/* Футер */
+/* Post page */
+
+.profile-page {
+  display: flex;
+  gap: 40px;
+}
+
+.gallery-grid {
+  display: flex;
+  gap: 10px;
+}
+
+.profile-info,
+.contacts {
+  flex-direction: column;
+  display: flex;
+  gap: 10px;
+}
+
+.gallery-title {
+  margin-bottom: 30px;
+}

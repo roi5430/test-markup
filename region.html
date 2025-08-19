@@ -3,57 +3,82 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Профили – Халландейл-Бич</title>
+    <title>Профили – Майами-Бич</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container">
-        <h1>Профили – Халландейл-Бич</h1>
-        <nav class="breadcrumb" aria-label="Хлебные крошки">
-          <ol>
-            <li><a href="index.html">Главная</a></li>
-            <li aria-current="page">Халландейл-Бич</li>
-          </ol>
+        <h1>Профили – Майами-Бич</h1>
+        <nav class="breadcrumb" aria-label="breadcrumb">
+          <ul class="categories-list">
+            <li class="categories-item"><a href="index.html">Главная</a></li>
+            <li class="categories-item" aria-current="page">Майами-Бич</li>
+          </ul>
         </nav>
       </div>
     </header>
 
     <main class="container">
-      <aside class="filters">
-        <h2>Рубрики</h2>
-        <ul>
-          <li><a href="category.html">Фотографы</a></li>
-          <li><a href="category.html">Модели</a></li>
-          <li><a href="category.html">Стилисты</a></li>
-        </ul>
-      </aside>
+      <div class="main">
+        <aside class="filters">
+          <details>
+            <summary>Рубрики</summary>
+            <ul class="categories-list">
+              <li class="categories-item">
+                <a href="category.html">Фотографы</a>
+              </li>
+              <li class="categories-item">
+                <a href="category.html">Модели</a>
+              </li>
+              <li class="categories-item">
+                <a href="category.html">Стилисты</a>
+              </li>
+            </ul>
+          </details>
+        </aside>
 
-      <section class="card-grid" aria-labelledby="region-profiles">
-        <h2 id="region-profiles" class="visually-hidden">
-          Профили в Халландейл-Бич
-        </h2>
+        <section aria-labelledby="region-profiles">
+          <!-- Карточки как в index, но отфильтрованные по региону -->
+          <ul class="card-grid">
+            <li class="card">
+              <a href="post.html" class="card__link">
+                <img
+                  src="./image/avatar-1.jpg"
+                  alt="Анна — фотограф"
+                  loading="lazy"
+                  width="400"
+                  height="400"
+                />
+                <div class="card__body">
+                  <h3 class="card__name">Анна</h3>
+                  <p class="card__meta">Фотограф</p>
+                  <time datetime="2025-08-08T11:43">08.08.2025, 11:43</time>
+                </div>
+              </a>
+            </li>
 
-        <!-- Карточки как в index, но отфильтрованные по региону -->
-        <article class="card">
-          <a href="post.html" class="card__link">
-            <img
-              src="./image/avatar-1.jpg"
-              alt="Анна — фотограф"
-              loading="lazy"
-              width="400"
-              height="400"
-            />
-            <div class="card__body">
-              <h3 class="card__name">Анна</h3>
-              <p class="card__meta">Фотограф</p>
-              <time datetime="2025-08-08T11:43">08.08.2025, 11:43</time>
-            </div>
-          </a>
-        </article>
+            <li class="card">
+              <a href="post.html" class="card__link">
+                <img
+                  src="./image/avatar-3.jpg"
+                  alt="Мария — фотограф"
+                  loading="lazy"
+                  width="400"
+                  height="400"
+                />
+                <div class="card__body">
+                  <h3 class="card__name">Мария</h3>
+                  <p class="card__meta">Фотограф</p>
+                  <time datetime="2025-08-08T11:43">08.08.2025, 11:43</time>
+                </div>
+              </a>
+            </li>
+          </ul>
 
-        <!-- ... -->
-      </section>
+          <!-- ... -->
+        </section>
+      </div>
     </main>
 
     <footer class="site-footer container">

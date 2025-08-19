@@ -10,53 +10,28 @@
     <header class="site-header">
       <div class="container">
         <h1>Анна — фотограф</h1>
-        <nav class="breadcrumb" aria-label="Хлебные крошки">
-          <ol>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="category.html">Фотографы</a></li>
-            <li aria-current="page">Анна</li>
-          </ol>
+        <nav class="breadcrumb" aria-label="breadcrumb">
+          <ul class="categories-list">
+            <li class="categories-item"><a href="index.html">Главная</a></li>
+            <li class="categories-item">
+              <a href="category.html">Фотографы</a>
+            </li>
+            <li class="categories-item" aria-current="page">Анна</li>
+          </ul>
         </nav>
       </div>
     </header>
 
     <main class="container profile-page">
-      <section class="gallery" aria-labelledby="gallery-title">
-        <h2 id="gallery-title" class="visually-hidden">Галерея</h2>
-        <ul class="gallery-grid">
-          <li>
-            <img
-              src="./img/gallery-1.jpg"
-              alt="Пример работы 1"
-              loading="lazy"
-            />
-          </li>
-          <li>
-            <img
-              src="./img/gallery-1.jpg"
-              alt="Пример работы 2"
-              loading="lazy"
-            />
-          </li>
-          <li>
-            <img
-              src="./img/gallery-1.jpg"
-              alt="Пример работы 3"
-              loading="lazy"
-            />
-          </li>
-        </ul>
-      </section>
-
       <section class="profile-info">
         <h2>Анна, 28</h2>
         <p class="meta">Майами-Бич — Фотограф</p>
 
         <article class="description">
-          <h3>О себе</h3>
+          <h3>O себе</h3>
           <p>
-            Краткое описание: съемка портретов и коммерческих проектов. Работала
-            с локальными брендами, есть опыт съемок на улице и в студии.
+            Cъемка портретов и коммерческих проектов. Работала с локальными
+            брендами, есть опыт съемок на улице и в студии.
           </p>
         </article>
 
@@ -66,6 +41,38 @@
           <p>Телефон: <a href="tel:+1234567890">+1 234 567 890</a></p>
           <p><a class="btn" href="mailto:anna@example.com">Связаться</a></p>
         </article>
+      </section>
+      <section class="gallery" aria-labelledby="gallery-title">
+        <h2 id="gallery-title" class="gallery-title">Галерея</h2>
+        <ul class="gallery-grid">
+          <li>
+            <img
+              src="./image/avatar-1.jpg"
+              alt="Пример работы 1"
+              loading="lazy"
+              width="300"
+              height="300"
+            />
+          </li>
+          <li>
+            <img
+              src="./image/avatar-2.jpeg"
+              alt="Пример работы 2"
+              loading="lazy"
+              width="300"
+              height="300"
+            />
+          </li>
+          <li>
+            <img
+              src="./image/avatar-3.jpg"
+              alt="Пример работы 3"
+              loading="lazy"
+              width="300"
+              height="300"
+            />
+          </li>
+        </ul>
       </section>
     </main>
 
