@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="site-header">
+    <header class="header">
       <div class="container">
         <h1>Фотографы в Майами</h1>
-        <nav class="breadcrumb" aria-label="Хлебные крошки">
+        <nav class="header-nav">
           <ul class="categories-list">
-            <li class="categories-item"><a href="index.html">Главная</a></li>
-            <li class="categories-item" aria-current="page">Фотографы</li>
+            <li class="categories-item"><a href="./index.html">Главная</a></li>
+            <li class="categories-item">Фотографы</li>
           </ul>
         </nav>
       </div>
@@ -30,11 +30,10 @@
         </ul>
       </aside>
 
-      <section class="card-grid" aria-labelledby="category-profiles">
-        <!-- Примеры карточек -->
+      <section class="card-grid">
         <ul class="card-grid">
           <li class="card">
-            <a href="post.html" class="card__link">
+            <a href="post.html" class="card-link">
               <img
                 src="./image/avatar-1.jpg"
                 alt="Анна — фотограф"
@@ -42,16 +41,16 @@
                 width="400"
                 height="400"
               />
-              <div class="card__body">
-                <h3 class="card__name">Анна</h3>
-                <p class="card__meta">Фотограф</p>
+              <div class="card-body">
+                <h3 class="card-name">Анна</h3>
+                <p class="card-meta">Фотограф</p>
                 <time datetime="2025-08-08T11:43">08.08.2025, 11:43</time>
               </div>
             </a>
           </li>
 
           <li class="card">
-            <a href="post.html" class="card__link">
+            <a href="post.html" class="card-link">
               <img
                 src="./image/avatar-3.jpg"
                 alt="Мария — фотограф"
@@ -59,9 +58,9 @@
                 width="400"
                 height="400"
               />
-              <div class="card__body">
-                <h3 class="card__name">Мария</h3>
-                <p class="card__meta">Фотограф</p>
+              <div class="card-body">
+                <h3 class="card-name">Мария</h3>
+                <p class="card-meta">Фотограф</p>
                 <time datetime="2025-08-08T11:43">08.08.2025, 11:43</time>
               </div>
             </a>
@@ -71,8 +70,10 @@
       </section>
     </main>
 
-    <footer class="site-footer container">
-      <p>© ModelConnect Miami</p>
+    <footer class="footer">
+      <div class="container">
+        <p>© ModelConnect Miami</p>
+      </div>
     </footer>
   </body>
 </html>

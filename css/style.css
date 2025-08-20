@@ -14,28 +14,15 @@ body {
   height: 100%;
   width: 100%;
   background-color: var(--main-color);
-  font-family: "Playfair Display", serif;
+  font-family: "DM Mono", serif;
   font-weight: 400;
   font-size: 18px;
   color: var(--white-color);
   overflow-x: hidden;
 }
 
-img {
-  display: block;
-}
-
-.container {
-  width: 1440px;
-  padding: 0px 70px 40px;
-  margin: 0 auto;
-}
-
-.section {
-  padding: 120px 0px;
-}
-
 p,
+h1,
 h2,
 h3,
 h4,
@@ -66,6 +53,20 @@ a:focus {
   border-bottom: 2px solid var(--white-color);
 }
 
+img {
+  display: block;
+}
+
+.container {
+  width: 1440px;
+  padding: 0px 70px 40px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 120px 0px;
+}
+
 /* Главная */
 
 .search-title {
@@ -90,7 +91,7 @@ a:focus {
   gap: 40px;
 }
 
-.main-title {
+.header-title {
   color: var(--white-color);
   font-family: "DM Mono", serif;
   font-size: 48px;
@@ -102,7 +103,7 @@ a:focus {
   max-width: 300px;
 }
 
-.search-box input {
+.search-box-input {
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
@@ -113,21 +114,18 @@ a:focus {
   transition: border-color 0.3s, color 0.3s;
 }
 
-.search-box input::placeholder {
+.search-box-input::placeholder {
   color: #888;
   transition: color 0.3s;
 }
 
-.search-box input:hover {
+.search-box-input:hover,
+.search-box-input:focus {
   border-color: #888;
-}
-
-.search-box input:focus {
-  border-color: var(--white-color);
   color: var(--white-color);
 }
 
-.nav-list {
+.header-nav-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -135,7 +133,6 @@ a:focus {
 }
 
 .side-lists {
-  font-family: "DM Mono", serif;
   max-width: 250px;
 }
 
@@ -147,7 +144,6 @@ details {
 summary {
   cursor: pointer;
   font-size: 18px;
-  /* list-style: none;  */
 }
 
 summary::-webkit-details-marker {
@@ -191,7 +187,7 @@ details[open] summary {
   box-shadow: 0 2px 5px rgba(255, 255, 255, 0.8);
 }
 
-.card__body {
+.card-body {
   border: 1px solid #888;
   padding: 10px;
   display: flex;
@@ -200,13 +196,13 @@ details[open] summary {
   flex-direction: column;
 }
 
-.card__name {
+.card-name {
   font-family: "DM Mono", serif;
   font-weight: 100;
 }
 
-.card__meta,
-.card__time {
+.card-meta,
+.card-time {
   color: #888;
   font-size: 16px;
 }

@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="site-header">
+    <header class="header">
       <div class="container">
         <h1>Анна — фотограф</h1>
-        <nav class="breadcrumb" aria-label="breadcrumb">
+        <nav class="header-nav">
           <ul class="categories-list">
-            <li class="categories-item"><a href="index.html">Главная</a></li>
+            <li class="categories-item"><a href="./index.html">Главная</a></li>
             <li class="categories-item">
               <a href="category.html">Фотографы</a>
             </li>
-            <li class="categories-item" aria-current="page">Анна</li>
+            <li class="categories-item">Анна</li>
           </ul>
         </nav>
       </div>
@@ -25,7 +25,7 @@
     <main class="container profile-page">
       <section class="profile-info">
         <h2>Анна, 28</h2>
-        <p class="meta">Майами-Бич — Фотограф</p>
+        <p>Майами-Бич — Фотограф</p>
 
         <article class="description">
           <h3>O себе</h3>
@@ -42,7 +42,7 @@
           <p><a class="btn" href="mailto:anna@example.com">Связаться</a></p>
         </article>
       </section>
-      <section class="gallery" aria-labelledby="gallery-title">
+      <section class="gallery">
         <h2 id="gallery-title" class="gallery-title">Галерея</h2>
         <ul class="gallery-grid">
           <li>
@@ -76,8 +76,10 @@
       </section>
     </main>
 
-    <footer class="site-footer container">
-      <p>© ModelConnect Miami</p>
+    <footer class="footer">
+      <div class="container">
+        <p>© ModelConnect Miami</p>
+      </div>
     </footer>
   </body>
 </html>

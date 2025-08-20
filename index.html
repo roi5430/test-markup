@@ -4,27 +4,32 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>ModelConnect Miami – свежие профили</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="site-header">
+    <header class="header">
       <div class="container">
-        <nav class="" aria-label="Главная навигация">
-          <ul class="nav-list">
+        <nav class="header-nav">
+          <ul class="header-nav-list">
             <li>
-              <h1 class="main-title">
+              <h1 class="header-title">
                 ModelConnect Miami
-                <a href="index.html"></a>
+                <a href="./index.html"></a>
               </h1>
             </li>
             <li class="search-box">
-              <input type="text" placeholder="Пошук..." aria-label="Пошук" />
+              <input
+                class="search-box-input"
+                type="text"
+                placeholder="Поиск..."
+                aria-label="Поиск"
+              />
             </li>
           </ul>
         </nav>
@@ -33,20 +38,20 @@
 
     <main class="container">
       <div class="main">
-        <section class="search-meta">
+        <section>
           <h2 class="search-title">Фильтры</h2>
           <aside class="side-lists">
             <details>
               <summary>Регионы</summary>
               <ul class="region-list">
                 <li class="region-item">
-                  <a href="region.html">Майами-Бич</a>
+                  <a href="./region.html">Майами-Бич</a>
                 </li>
                 <li class="region-item">
-                  <a href="region.html">Халландейл</a>
+                  <a href="./region.html">Халландейл</a>
                 </li>
                 <li class="region-item">
-                  <a href="region.html">Корал-Гейблс</a>
+                  <a href="./region.html">Корал-Гейблс</a>
                 </li>
               </ul>
             </details>
@@ -55,27 +60,25 @@
               <summary>Рубрики</summary>
               <ul class="categories-list">
                 <li class="categories-item">
-                  <a href="category.html">Фотографы</a>
+                  <a href="./category.html">Фотографы</a>
                 </li>
                 <li class="categories-item">
-                  <a href="category.html">Модели</a>
+                  <a href="./category.html">Модели</a>
                 </li>
                 <li class="categories-item">
-                  <a href="category.html">Стилисты</a>
+                  <a href="./category.html">Стилисты</a>
                 </li>
               </ul>
             </details>
           </aside>
         </section>
 
-        <section class="cards-preview" aria-labelledby="latest-title">
+        <section class="cards-preview">
           <h2 class="cards-title" id="latest-title">Свежие профили</h2>
-          <!-- Просмотр примера — 9 карточек на реальном сайте будут подгружаться
-          динамически. -->
 
-          <ul class="card-grid" role="list">
-            <li class="card" role="listitem">
-              <a href="post.html" class="card__link">
+          <ul class="card-grid">
+            <li class="card">
+              <a href="./post.html" class="card-link">
                 <img
                   src="./image/avatar-1.jpg"
                   alt="Анна — фотограф"
@@ -83,18 +86,18 @@
                   width="300"
                   height="300"
                 />
-                <div class="card__body">
-                  <h3 class="card__name">Анна</h3>
-                  <p class="card__meta">Майами-Бич — Фотограф</p>
-                  <time class="card__time" datetime="2025-08-08T11:43"
+                <div class="card-body">
+                  <h3 class="card-name">Анна</h3>
+                  <p class="card-meta">Майами-Бич — Фотограф</p>
+                  <time class="card-time" datetime="2025-08-08T11:43"
                     >08.08.2025, 11:43</time
                   >
                 </div>
               </a>
             </li>
 
-            <li class="card" role="listitem">
-              <a href="post.html" class="card__link">
+            <li class="card">
+              <a href="./post.html" class="card-link">
                 <img
                   src="./image/avatar-2.jpeg"
                   alt="Марк — модель"
@@ -102,18 +105,18 @@
                   width="300"
                   height="300"
                 />
-                <div class="card__body">
-                  <h3 class="card__name">Марк</h3>
-                  <p class="card__meta">Халландейл — Модель</p>
-                  <time class="card__time" datetime="2025-08-08T10:20"
+                <div class="card-body">
+                  <h3 class="card-name">Марк</h3>
+                  <p class="card-meta">Халландейл — Модель</p>
+                  <time class="card-time" datetime="2025-08-08T10:20"
                     >08.08.2025, 10:20</time
                   >
                 </div>
               </a>
             </li>
 
-            <li class="card" role="listitem">
-              <a href="post.html" class="card__link">
+            <li class="card">
+              <a href="./post.html" class="card-link">
                 <img
                   src="./image/avatar-3.jpg"
                   alt="Мария — модель"
@@ -121,17 +124,17 @@
                   width="300"
                   height="300"
                 />
-                <div class="card__body">
-                  <h3 class="card__name">Мария</h3>
-                  <p class="card__meta">Корал-Гейблс — Модель</p>
-                  <time class="card__time" datetime="2025-09-08T16:20"
+                <div class="card-body">
+                  <h3 class="card-name">Мария</h3>
+                  <p class="card-meta">Корал-Гейблс — Модель</p>
+                  <time class="card-time" datetime="2025-09-08T16:20"
                     >09.08.2025, 16:20</time
                   >
                 </div>
               </a>
             </li>
-            <li class="card" role="listitem">
-              <a href="post.html" class="card__link">
+            <li class="card">
+              <a href="./post.html" class="card-link">
                 <img
                   src="./image/avatar-1.jpg"
                   alt="Анна — фотограф"
@@ -139,18 +142,18 @@
                   width="300"
                   height="300"
                 />
-                <div class="card__body">
-                  <h3 class="card__name">Анна</h3>
-                  <p class="card__meta">Майами-Бич — Фотограф</p>
-                  <time class="card__time" datetime="2025-08-08T11:43"
+                <div class="card-body">
+                  <h3 class="card-name">Анна</h3>
+                  <p class="card-meta">Майами-Бич — Фотограф</p>
+                  <time class="card-time" datetime="2025-08-08T11:43"
                     >08.08.2025, 11:43</time
                   >
                 </div>
               </a>
             </li>
 
-            <li class="card" role="listitem">
-              <a href="post.html" class="card__link">
+            <li class="card">
+              <a href="./post.html" class="card-link">
                 <img
                   src="./image/avatar-2.jpeg"
                   alt="Марк — модель"
@@ -158,18 +161,18 @@
                   width="300"
                   height="300"
                 />
-                <div class="card__body">
-                  <h3 class="card__name">Марк</h3>
-                  <p class="card__meta">Халландейл — Модель</p>
-                  <time class="card__time" datetime="2025-08-08T10:20"
+                <div class="card-body">
+                  <h3 class="card-name">Марк</h3>
+                  <p class="card-meta">Халландейл — Модель</p>
+                  <time class="card-time" datetime="2025-08-08T10:20"
                     >08.08.2025, 10:20</time
                   >
                 </div>
               </a>
             </li>
 
-            <li class="card" role="listitem">
-              <a href="post.html" class="card__link">
+            <li class="card">
+              <a href="./post.html" class="card-link">
                 <img
                   src="./image/avatar-3.jpg"
                   alt="Мария — модель"
@@ -177,17 +180,17 @@
                   width="300"
                   height="300"
                 />
-                <div class="card__body">
-                  <h3 class="card__name">Мария</h3>
-                  <p class="card__meta">Корал-Гейблс — Модель</p>
-                  <time class="card__time" datetime="2025-09-08T16:20"
+                <div class="card-body">
+                  <h3 class="card-name">Мария</h3>
+                  <p class="card-meta">Корал-Гейблс — Модель</p>
+                  <time class="card-time" datetime="2025-09-08T16:20"
                     >09.08.2025, 16:20</time
                   >
                 </div>
               </a>
             </li>
-            <li class="card" role="listitem">
-              <a href="post.html" class="card__link">
+            <li class="card">
+              <a href="./post.html" class="card-link">
                 <img
                   src="./image/avatar-1.jpg"
                   alt="Анна — фотограф"
@@ -195,18 +198,18 @@
                   width="300"
                   height="300"
                 />
-                <div class="card__body">
-                  <h3 class="card__name">Анна</h3>
-                  <p class="card__meta">Майами-Бич — Фотограф</p>
-                  <time class="card__time" datetime="2025-08-08T11:43"
+                <div class="card-body">
+                  <h3 class="card-name">Анна</h3>
+                  <p class="card-meta">Майами-Бич — Фотограф</p>
+                  <time class="card-time" datetime="2025-08-08T11:43"
                     >08.08.2025, 11:43</time
                   >
                 </div>
               </a>
             </li>
 
-            <li class="card" role="listitem">
-              <a href="post.html" class="card__link">
+            <li class="card">
+              <a href="./post.html" class="card-link">
                 <img
                   src="./image/avatar-2.jpeg"
                   alt="Марк — модель"
@@ -214,18 +217,18 @@
                   width="300"
                   height="300"
                 />
-                <div class="card__body">
-                  <h3 class="card__name">Марк</h3>
-                  <p class="card__meta">Халландейл — Модель</p>
-                  <time class="card__time" datetime="2025-08-08T10:20"
+                <div class="card-body">
+                  <h3 class="card-name">Марк</h3>
+                  <p class="card-meta">Халландейл — Модель</p>
+                  <time class="card-time" datetime="2025-08-08T10:20"
                     >08.08.2025, 10:20</time
                   >
                 </div>
               </a>
             </li>
 
-            <li class="card" role="listitem">
-              <a href="post.html" class="card__link">
+            <li class="card">
+              <a href="./post.html" class="card-link">
                 <img
                   src="./image/avatar-3.jpg"
                   alt="Мария — модель"
@@ -233,22 +236,21 @@
                   width="300"
                   height="300"
                 />
-                <div class="card__body">
-                  <h3 class="card__name">Мария</h3>
-                  <p class="card__meta">Корал-Гейблс — Модель</p>
-                  <time class="card__time" datetime="2025-09-08T16:20"
+                <div class="card-body">
+                  <h3 class="card-name">Мария</h3>
+                  <p class="card-meta">Корал-Гейблс — Модель</p>
+                  <time class="card-time" datetime="2025-09-08T16:20"
                     >09.08.2025, 16:20</time
                   >
                 </div>
               </a>
             </li>
-            <!-- ... ещё карточки ... -->
           </ul>
         </section>
       </div>
     </main>
 
-    <footer class="site-footer">
+    <footer class="footer">
       <div class="container">
         <p>© ModelConnect Miami</p>
       </div>
