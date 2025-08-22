@@ -8,16 +8,17 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: "DM Mono", serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--white-color);
+}
+
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  width: 100%;
   background-color: var(--main-color);
-  font-family: "DM Mono", serif;
-  font-weight: 400;
-  font-size: 18px;
-  color: var(--white-color);
   overflow-x: hidden;
 }
 
@@ -55,10 +56,13 @@ a:focus {
 
 img {
   display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
 .container {
-  width: 1440px;
+  max-width: 1440px;
   padding: 0px 70px 40px;
   margin: 0 auto;
 }
@@ -180,6 +184,7 @@ details[open] summary {
 
 .card {
   transition: box-shadow 0.3s ease;
+  width: 300px;
 }
 
 .card:hover,
@@ -198,7 +203,7 @@ details[open] summary {
 
 .card-name {
   font-family: "DM Mono", serif;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 .card-meta,
@@ -224,6 +229,7 @@ details[open] summary {
   flex-direction: column;
   display: flex;
   gap: 10px;
+  width: 300px;
 }
 
 .gallery-title {
