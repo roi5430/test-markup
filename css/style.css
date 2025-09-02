@@ -59,9 +59,6 @@ img {
   object-fit: cover;
 }
 
-@media screen and (max-width: 480px) {
-}
-
 .container {
   max-width: 1440px;
   padding-right: 40px;
@@ -263,4 +260,84 @@ details[open] summary {
 
 .gallery-title {
   margin-bottom: 30px;
+}
+
+/* Телефон (до 767px) */
+@media screen and (min-width: 380px) and (max-width: 767px) {
+  body {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .main {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  section {
+    padding: 15px 0;
+  }
+
+  .header-nav-list,
+  .post-nav-list,
+  .category-nav-list {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .gallery-grid,
+  .card-grid {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .profile-page {
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-info {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .contacts p {
+    font-size: 13px;
+  }
+}
+
+/* Планшет (768px – 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+
+  section {
+    padding: 15px 0;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .profile-page {
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-nav-list,
+  .post-nav-list,
+  .category-nav-list {
+    gap: 15px;
+  }
+
+  .profile-info {
+    font-size: 15px;
+  }
 }
